@@ -2,6 +2,7 @@ package com.grgbanking.electric.service;
 
 import java.util.List;
 
+import com.grgbanking.electric.data.OrganizationData;
 import com.grgbanking.electric.entity.Organization;
 import com.grgbanking.electric.page.IPage;
 import com.grgbanking.electric.param.OrganizationQueryParam;
@@ -20,6 +21,12 @@ public interface IOrganizationService {
 	 * @return
 	 */
 	void saveBatch(List<Organization> organizations);
+	/**
+	 * 批量新增
+	 * @param data
+	 * @return
+	 */
+	void saveBatchData(OrganizationData data);
 	
 	/**
 	 * 修改

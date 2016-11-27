@@ -13,6 +13,7 @@ public class Tree implements Serializable {
 	private String id;
 	private String text;
 	private String state;
+	private String iconCls;
 	private boolean checked;
 	private List<Tree> children;
 	private Map<String, String> attributes;
@@ -34,6 +35,12 @@ public class Tree implements Serializable {
 	}
 	public void setState(String state) {
 		this.state = state;
+	}
+	public String getIconCls() {
+		return iconCls;
+	}
+	public void setIconCls(String iconCls) {
+		this.iconCls = iconCls;
 	}
 	public boolean isChecked() {
 		return checked;
