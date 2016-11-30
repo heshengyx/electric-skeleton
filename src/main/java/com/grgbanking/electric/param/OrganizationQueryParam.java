@@ -14,6 +14,14 @@ public class OrganizationQueryParam extends QueryParam implements Serializable {
 	private String createDateBegin;
 	private String createDateEnd;
 	
+	private String terminalFlag;
+
+	public String getTerminalFlag() {
+		return terminalFlag;
+	}
+	public void setTerminalFlag(String terminalFlag) {
+		this.terminalFlag = terminalFlag;
+	}
 	public String getCode() {
 		return code;
 	}

@@ -1,6 +1,7 @@
 package com.grgbanking.electric.service;
 
 import java.util.List;
+
 import com.grgbanking.electric.entity.Terminal;
 import com.grgbanking.electric.param.TerminalQueryParam;
 import com.grgbanking.electric.page.IPage;
@@ -32,6 +33,13 @@ public interface ITerminalService {
      * @param Terminal
      */
     void update(Terminal terminal);
+    
+    /**
+     * 批量修改
+     * @param terminal
+     * @param ids
+     */
+    void updateByIds(Terminal terminal, String[] id);
     
     /**
      * 根据ID删除
@@ -77,6 +85,13 @@ public interface ITerminalService {
      * @return
      */
     IPage<Terminal> query(TerminalQueryParam param);
+    
+    /**
+     * 查询分页
+     * @param param
+     * @return
+     */
+    IPage<Terminal> queryData(TerminalQueryParam param);
     
     /**
      * 查询全部

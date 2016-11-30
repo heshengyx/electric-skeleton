@@ -16,8 +16,16 @@ public class TerminalQueryParam extends QueryParam implements Serializable {
 
     private String createDateBegin;
 	private String createDateEnd;
+	
+	private String orgIdFlag;
     
-    public void setName(String name) {
+    public String getOrgIdFlag() {
+		return orgIdFlag;
+	}
+	public void setOrgIdFlag(String orgIdFlag) {
+		this.orgIdFlag = orgIdFlag;
+	}
+	public void setName(String name) {
 		this.name = name;
 	}
 	public String getName() {
