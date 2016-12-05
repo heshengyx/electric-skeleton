@@ -14,10 +14,17 @@ public class Tree implements Serializable {
 	private String text;
 	private String state;
 	private String iconCls;
+	private String parentId;
 	private boolean checked;
 	private List<Tree> children;
 	private Map<String, String> attributes;
 	
+	public String getParentId() {
+		return parentId;
+	}
+	public void setParentId(String parentId) {
+		this.parentId = parentId;
+	}
 	public String getId() {
 		return id;
 	}
