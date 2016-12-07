@@ -9,12 +9,17 @@ public class RoleQueryParam extends QueryParam implements Serializable {
      * 
      */
     private static final long serialVersionUID = 1L;
-    
+    private String userId;
     private String createDateBegin;
 	private String createDateEnd;
     
-    
-    public String getCreateDateBegin() {
+    public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getCreateDateBegin() {
 		return createDateBegin;
 	}
 	public void setCreateDateBegin(String createDateBegin) {

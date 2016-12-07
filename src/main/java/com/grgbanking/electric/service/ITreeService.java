@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.grgbanking.electric.param.OrganizationQueryParam;
 import com.grgbanking.electric.param.PermissionQueryParam;
+import com.grgbanking.electric.param.RoleQueryParam;
 import com.grgbanking.electric.tree.Tree;
 
 public interface ITreeService {
@@ -21,4 +22,11 @@ public interface ITreeService {
 	 * @return
 	 */
 	List<Tree> treePermission(PermissionQueryParam param);
+	
+	/**
+	 * 角色树
+	 * @param param
+	 * @return
+	 */
+	List<Tree> treeRole(RoleQueryParam param);
 }

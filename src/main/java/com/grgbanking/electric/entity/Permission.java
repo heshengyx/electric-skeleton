@@ -15,10 +15,16 @@ public class Permission extends BaseEntity implements Serializable {
      */
     private static final long serialVersionUID = 1L;
 	private String name;
+	private String code;
 	private String url;
 	private String parentId;
-
 	
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
 	public void setName(String name) {
 		this.name = name;
 	}
