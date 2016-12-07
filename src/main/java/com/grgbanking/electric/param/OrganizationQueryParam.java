@@ -15,7 +15,14 @@ public class OrganizationQueryParam extends QueryParam implements Serializable {
 	private String createDateEnd;
 	
 	private String terminalFlag;
+	private String roleId;
 
+	public String getRoleId() {
+		return roleId;
+	}
+	public void setRoleId(String roleId) {
+		this.roleId = roleId;
+	}
 	public String getTerminalFlag() {
 		return terminalFlag;
 	}

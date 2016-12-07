@@ -13,7 +13,7 @@ public interface ITreeService {
 	 * @param param
 	 * @return
 	 */
-	List<Tree> tree(OrganizationQueryParam param);
+	List<Tree> treeOrganization(OrganizationQueryParam param);
 	
 	/**
 	 * 权限树

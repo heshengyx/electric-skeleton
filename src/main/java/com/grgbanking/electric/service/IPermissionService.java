@@ -1,10 +1,11 @@
 package com.grgbanking.electric.service;
 
 import java.util.List;
-import com.grgbanking.electric.entity.Permission;
-import com.grgbanking.electric.param.PermissionQueryParam;
-import com.grgbanking.electric.page.IPage;
+
 import com.grgbanking.electric.data.PermissionData;
+import com.grgbanking.electric.entity.Permission;
+import com.grgbanking.electric.page.IPage;
+import com.grgbanking.electric.param.PermissionQueryParam;
 
 
 public interface IPermissionService {
@@ -84,4 +85,9 @@ public interface IPermissionService {
      * @return
      */
     List<Permission> queryAll(PermissionQueryParam param);
+    
+    /**
+     * 查找用户权限
+     */
+    List<Permission> queryPermissions(PermissionQueryParam param);
 }
