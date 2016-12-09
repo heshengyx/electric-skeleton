@@ -2,10 +2,10 @@ package com.grgbanking.electric.service;
 
 import java.util.List;
 
-import com.grgbanking.electric.entity.Terminal;
-import com.grgbanking.electric.param.TerminalQueryParam;
-import com.grgbanking.electric.page.IPage;
 import com.grgbanking.electric.data.TerminalData;
+import com.grgbanking.electric.entity.Terminal;
+import com.grgbanking.electric.page.IPage;
+import com.grgbanking.electric.param.TerminalQueryParam;
 
 
 public interface ITerminalService {
@@ -99,4 +99,11 @@ public interface ITerminalService {
      * @return
      */
     List<Terminal> queryAll(TerminalQueryParam param);
+    
+    /**
+     * 根据用户Id查找终端
+     * @param userId
+     * @return
+     */
+    List<Terminal> queryByUserId(String userId);
 }

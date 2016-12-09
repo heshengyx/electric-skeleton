@@ -1,6 +1,7 @@
 package com.grgbanking.electric.service;
 
 import java.util.List;
+
 import com.grgbanking.electric.entity.RoleOrganization;
 import com.grgbanking.electric.param.RoleOrganizationQueryParam;
 import com.grgbanking.electric.page.IPage;
@@ -84,4 +85,11 @@ public interface IRoleOrganizationService {
      * @return
      */
     List<RoleOrganization> queryAll(RoleOrganizationQueryParam param);
+    
+    /**
+     * 根据用户ID查找机构ID
+     * @param userId
+     * @return
+     */
+    List<RoleOrganization> queryByUserId(String userId);
 }

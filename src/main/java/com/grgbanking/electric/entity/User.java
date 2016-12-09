@@ -22,8 +22,14 @@ public class User extends BaseEntity implements Serializable {
 	private String account;
 	private String password;
 	private String orgId;
-
+	private String admin;
 	
+	public String getAdmin() {
+		return admin;
+	}
+	public void setAdmin(String admin) {
+		this.admin = admin;
+	}
 	public void setName(String name) {
 		this.name = name;
 	}
