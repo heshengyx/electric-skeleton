@@ -1,6 +1,7 @@
 package com.grgbanking.electric.data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class TerminalQueryData extends BaseQueryData implements Serializable {
 
@@ -12,7 +13,28 @@ public class TerminalQueryData extends BaseQueryData implements Serializable {
 	private String code;
 	private String orgName;
 	private String styleName;
+	private String ipaddr;
+	private String status;
+	private Date heartbeat;
 	
+	public String getIpaddr() {
+		return ipaddr;
+	}
+	public void setIpaddr(String ipaddr) {
+		this.ipaddr = ipaddr;
+	}
+	public Date getHeartbeat() {
+		return heartbeat;
+	}
+	public void setHeartbeat(Date heartbeat) {
+		this.heartbeat = heartbeat;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public String getName() {
 		return name;
 	}
