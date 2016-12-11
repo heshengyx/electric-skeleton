@@ -40,5 +40,7 @@ public enum OptEnum {
 	UpgradeFileStart,
 
 	// 文件结束
-	UpgradeFileEnd;
+	UpgradeFileEnd,
+	
+	SYSTEM;
 }

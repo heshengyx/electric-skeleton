@@ -22,7 +22,6 @@ public class Employee extends BaseEntity implements Serializable {
 	private String idcard;
 	private Date birthDate;
 	private String orgId;
-
 	
 	public void setName(String name) {
 		this.name = name;
