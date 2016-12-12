@@ -1,10 +1,11 @@
 package com.grgbanking.electric.service;
 
 import java.util.List;
-import com.grgbanking.electric.entity.Employee;
-import com.grgbanking.electric.param.EmployeeQueryParam;
-import com.grgbanking.electric.page.IPage;
+
 import com.grgbanking.electric.data.EmployeeData;
+import com.grgbanking.electric.entity.Employee;
+import com.grgbanking.electric.page.IPage;
+import com.grgbanking.electric.param.EmployeeQueryParam;
 
 
 public interface IEmployeeService {

@@ -1,10 +1,11 @@
 package com.grgbanking.electric.service;
 
 import java.util.List;
-import com.grgbanking.electric.entity.FingerVein;
-import com.grgbanking.electric.param.FingerVeinQueryParam;
-import com.grgbanking.electric.page.IPage;
+
 import com.grgbanking.electric.data.FingerVeinData;
+import com.grgbanking.electric.entity.FingerVein;
+import com.grgbanking.electric.page.IPage;
+import com.grgbanking.electric.param.FingerVeinQueryParam;
 
 
 public interface IFingerVeinService {
@@ -84,16 +85,4 @@ public interface IFingerVeinService {
      * @return
      */
     List<FingerVein> queryAll(FingerVeinQueryParam param);
-    
-    /**
-     * 注册指静脉
-     * @param fingerVein
-     */
-    void register(FingerVein fingerVein);
-    
-    /**
-     * 识别指静脉
-     * @param fingerVein
-     */
-    String recognition(FingerVein fingerVein, String ipaddr);
 }
