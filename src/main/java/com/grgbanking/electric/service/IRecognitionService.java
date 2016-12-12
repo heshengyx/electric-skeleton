@@ -13,6 +13,14 @@ public interface IRecognitionService {
     Result heartbeat(String json, String ipaddr);
     
     /**
+     * 时间同步
+     * @param json
+     * @param ipaddr
+     * @return
+     */
+    Result syncTime(String json, String ipaddr);
+    
+    /**
      * 注册人员
      * @param json
      * @param ipaddr
