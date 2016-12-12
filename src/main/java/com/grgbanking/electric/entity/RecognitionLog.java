@@ -19,14 +19,20 @@ public class RecognitionLog extends BaseEntity implements Serializable {
 	private String seq;
 	private String threshold;
 	private int indexed;
+	private String type;
 	private String status;
 	private String orgName;
 	private String ipaddr;
 	private String terminalId;
 	private String employeeId;
 	private String fingerveinId;
-
 	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
 	public void setName(String name) {
 		this.name = name;
 	}
