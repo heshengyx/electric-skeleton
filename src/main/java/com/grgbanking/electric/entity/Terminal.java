@@ -20,9 +20,16 @@ public class Terminal extends BaseEntity implements Serializable {
 	private String orgId;
 	private String styleId;
 	private String ipaddr;
+	private String location;
 	private String status;
 	private Date heartbeat;
 	
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
 	public String getIpaddr() {
 		return ipaddr;
 	}

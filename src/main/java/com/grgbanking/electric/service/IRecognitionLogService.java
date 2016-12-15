@@ -1,5 +1,6 @@
 package com.grgbanking.electric.service;
 
+import java.io.File;
 import java.util.List;
 
 import com.grgbanking.electric.data.RecognitionLogData;
@@ -97,4 +98,10 @@ public interface IRecognitionLogService {
      * @return
      */
     List<RecognitionLogData> queryReport(RecognitionLogQueryParam param);
+    
+    /**
+     * 检测日志文件是否存在
+     * @param id
+     */
+    File exists(String id);
 }

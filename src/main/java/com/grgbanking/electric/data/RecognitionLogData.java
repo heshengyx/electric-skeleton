@@ -16,11 +16,18 @@ public class RecognitionLogData implements Serializable {
     private static final long serialVersionUID = 1L;
 	private String ipaddr;
 	private String status;
+	private String location;
 	private int recSuccTotal;
 	private int recFailTotal;
 	private int pwdSuccTotal;
 	private int pwdFailTotal;
 	
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
 	public int getRecSuccTotal() {
 		return recSuccTotal;
 	}

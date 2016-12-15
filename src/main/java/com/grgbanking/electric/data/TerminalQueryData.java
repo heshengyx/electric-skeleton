@@ -16,7 +16,14 @@ public class TerminalQueryData extends BaseQueryData implements Serializable {
 	private String ipaddr;
 	private String status;
 	private Date heartbeat;
-	
+	private String location;
+
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
 	public String getIpaddr() {
 		return ipaddr;
 	}

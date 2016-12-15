@@ -23,10 +23,17 @@ public class RecognitionLog extends BaseEntity implements Serializable {
 	private String status;
 	private String orgName;
 	private String ipaddr;
+	private String filePath;
 	private String terminalId;
 	private String employeeId;
 	private String fingerveinId;
 	
+	public String getFilePath() {
+		return filePath;
+	}
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
 	public String getType() {
 		return type;
 	}
